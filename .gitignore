@@ -1,0 +1,13 @@
+environments/
+.venv/
+venv/
+__pycache__/
+*.pyc
+data/
+*.pt
+*.pth
+checkpoints/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.pdf
