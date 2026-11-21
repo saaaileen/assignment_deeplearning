@@ -1,0 +1,4 @@
+Method,test_mse,test_psnr,test_ssim
+W^T projection of z_MLP,0.2824,5.4915,0.0578
+Frozen z_MLP decoder,0.0166,17.802,0.7213
+Vanilla AE z_AE,0.0066,21.8285,0.8641
