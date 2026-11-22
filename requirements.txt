@@ -1,10 +1,25 @@
-torch==2.5.1
-torchvision==0.20.1
+# Python 3.12 (numpy 1.26.4 has no wheels for 3.13)
+# Setup:
+#   py -3.12 -m venv environments/deep_learning
+#   environments\deep_learning\Scripts\activate
+#   python -m pip install --upgrade pip
+#   pip install -r requirements.txt
+#
+# CUDA 12.4 build of PyTorch (works on NVIDIA GPUs with driver >= 550).
+# For CPU-only, remove the index line and the "+cu124" suffixes.
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.5.1+cu124
+torchvision==0.20.1+cu124
+
 numpy==1.26.4
-scipy==1.14.1               
-torchmetrics==1.6.0          
-torch-fidelity==0.3.0        
-scikit-image==0.24.0         
-matplotlib==3.9.2            
-pandas==2.2.3               
-tqdm==4.67.0                 
+scipy==1.14.1
+torchmetrics==1.6.0
+torch-fidelity==0.3.0
+scikit-image==0.24.0
+matplotlib==3.9.2
+pandas==2.2.3
+tqdm==4.67.0
+
+# Jupyter kernel for the notebooks. After install, register it with:
+#   python -m ipykernel install --user --name deep_learning --display-name "Python (deep_learning)"
+ipykernel==7.4.0

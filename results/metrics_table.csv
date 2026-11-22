@@ -1,0 +1,7 @@
+Model,Latent dim,Train time / epoch (s),Latency (ms / 64),Test MSE,Test PSNR (dB),Test SSIM,FID,Stability
+Vanilla AE,64,0.9314,0.1352,0.0066,21.8285,0.8641,,Stabil / Konvergen
+Sparse AE,64 / 256 (sparse),1.0489,0.2609,0.0144,18.4284,0.7432,,Stabil / Konvergen
+VAE,64,1.4843,0.1004,0.0131,18.8398,0.768,88.6963,Stabil / Konvergen
+Vanilla GAN,100 (noise),2.0656,0.2051,,,,126.2545,Rentan osilasi / mode collapse
+DCGAN,100 (noise),4.8187,1.243,,,,21.8531,Cukup stabil (sensitif arsitektur)
+DDPM,28x28,23.1855,7254.1159,,,,17.3371,Sangat stabil
